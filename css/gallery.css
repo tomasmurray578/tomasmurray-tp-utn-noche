@@ -1,0 +1,8 @@
+.gallery-grid { display: grid; gap: 12px; }
+.gallery-item { border-radius: 12px; overflow: hidden; box-shadow: 0 6px 18px rgba(2,6,23,.08); }
+.gallery-item img { display: block; object-fit: cover; width: 100%; height: 100%; transition: transform .3s ease; }
+.gallery-item:hover img { transform: scale(1.04); }
+
+@media (min-width: 1024px) {
+    .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+}
